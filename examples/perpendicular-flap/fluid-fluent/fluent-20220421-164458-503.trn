@@ -1,0 +1,33 @@
+/opt/Software/ansys/ansys_inc/v212/fluent/fluent21.2.0/bin/fluent -r21.2.0 3ddp -pshmem -host -alnamd64 -t1 -mpi=intel -path/opt/Software/ansys/ansys_inc/v212/fluent -ssh -cx corvidpost4.corvidtec.com:35195:40942
+Starting /opt/Software/ansys/ansys_inc/v212/fluent/fluent21.2.0/lnamd64/3ddp_host/fluent.21.2.0 host -cx corvidpost4.corvidtec.com:35195:40942 "(list (rpsetvar (QUOTE parallel/function) "fluent 3ddp -flux -node -alnamd64 -r21.2.0 -t1 -pshmem -mpi=intel -ssh") (rpsetvar (QUOTE parallel/rhost) "") (rpsetvar (QUOTE parallel/ruser) "") (rpsetvar (QUOTE parallel/nprocs_string) "1") (rpsetvar (QUOTE parallel/auto-spawn?) #t) (rpsetvar (QUOTE parallel/trace-level) 0) (rpsetvar (QUOTE parallel/remote-shell) 1) (rpsetvar (QUOTE parallel/path) "/opt/Software/ansys/ansys_inc/v212/fluent") (rpsetvar (QUOTE parallel/hostsfile) "") )"
+
+              Welcome to ANSYS Fluent 2021 R2
+
+              Copyright 1987-2021 ANSYS, Inc. All Rights Reserved.
+              Unauthorized use, distribution or duplication is prohibited.
+              This product is subject to U.S. laws governing export and re-export.
+              For full Legal Notice, see documentation.
+
+Build Time: May 28 2021 13:48:13 EDT  Build Id: 10201  
+ 
+Host spawning Node 0 on machine "corvidpost4.corvidtec.com" (unix).
+/opt/Software/ansys/ansys_inc/v212/fluent/fluent21.2.0/bin/fluent -r21.2.0 3ddp -flux -node -alnamd64 -t1 -pshmem -mpi=intel -ssh -meshing -mport 10.1.211.4:10.1.211.4:36483:0
+Starting /opt/Software/ansys/ansys_inc/v212/fluent/fluent21.2.0/multiport/mpi/lnamd64/intel/bin/mpirun --rsh=ssh -f /tmp/fluent-appfile.mtree.3207 -genv FLUENT_ARCH lnamd64 -genv I_MPI_DEBUG 0 -genv I_MPI_ADJUST_REDUCE 2 -genv I_MPI_ADJUST_ALLREDUCE 2 -genv I_MPI_ADJUST_BCAST 1 -genv I_MPI_ADJUST_BARRIER 2 -genv I_MPI_ADJUST_ALLGATHER 2 -genv I_MPI_ADJUST_GATHER 2 -genv I_MPI_ADJUST_ALLTOALL 1 -genv I_MPI_ADJUST_SCATTER 2 -genv I_MPI_ADJUST_SCATTERV 2 -genv I_MPI_ADJUST_ALLGATHERV 2 -genv I_MPI_ADJUST_GATHERV 2 -genv I_MPI_PLATFORM auto -genv PYTHONHOME /opt/Software/ansys/ansys_inc/v212/fluent/fluent21.2.0/../../commonfiles/CPython/3_7/linx64/Release/python -genv FLUENT_PROD_DIR /opt/Software/ansys/ansys_inc/v212/fluent/fluent21.2.0 -genv KMP_AFFINITY disabled -genv LD_PRELOAD /opt/Software/ansys/ansys_inc/v212/fluent/fluent21.2.0/multiport/mpi/lnamd64/intel/lib/libstrtok.so -genv TMI_CONFIG /opt/Software/ansys/ansys_inc/v212/fluent/fluent21.2.0/multiport/mpi/lnamd64/intel/etc/tmi.conf -n 1 -host corvidpost4.corvidtec.com /opt/Software/ansys/ansys_inc/v212/fluent/fluent21.2.0/lnamd64/3ddp_node/fluent_mpi.21.2.0 node -mpiw intel -pic shmem -mport 10.1.211.4:10.1.211.4:36483:0 -meshing
+
+-------------------------------------------------------------------------------
+ID    Hostname              Core  O.S.      PID   Vendor               
+-------------------------------------------------------------------------------
+n0    corvidpost4.corvidte  1/48  Linux-64  3398  AMD Opteron(tm) 6348 
+host  corvidpost4.corvidte        Linux-64  2245  AMD Opteron(tm) 6348 
+
+MPI Option Selected: intel
+-------------------------------------------------------------------------------
+
+Cleanup script file is /home/shelf1/motorsports/software/Utilities/source/precice/fluent-adapter/examples/perpendicular-flap/fluid-fluent/cleanup-fluent-corvidpost4.corvidtec.com-2245.sh
+(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 0)
+
+Meshing> 
+beta-feature-access     file/                   print-license-usage
+display/                parallel/               switch-to-solution-mode
+exit                    preferences/
+
